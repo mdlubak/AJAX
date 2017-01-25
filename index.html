@@ -2,14 +2,36 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Random Joke AJAX</title>
+	<title>Random Quote AJAX</title>
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-blue.min.css">
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+	<link rel='stylesheet' type='text/css' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-	<button id="get-joke">Random joke</button>
-	<p id="joke"></p>
+	<main>
+		<div class="box mdl-shadow--4dp">
+			<header>
+				<h2>Random quote machine</h2>
+				<hr>
+			</header>
+				<h2 class="quote"></h2>
+				<h3 class="author"></h3>
+		</div>
+		
+		<div>
+			<button class="trigger mdl-button mdl-js-button mdl-button--raised mdl-button--colored"> Random quote </button>
+			<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+				<a href="#" target="_blank" class="tweet">
+					<i class="fa fa-lg fa-twitter"></i>
+					Tweet
+				</a>
+			</button>
+		</div>
+	</main>
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="script.js"></script>
 </body>
 </html>

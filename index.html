@@ -3,20 +3,19 @@
 <head>
 	<meta charset="utf-8">
 	<title>Countries Search AJAX</title>
-	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-blue.min.css">
-	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+<div class="container">
 	<h1>Wyszukiwarka krajów</h1>
 	<button id="search">Szukaj kraju</button>
-	<input id="country-name" type="text" />
-	<h2>Lista krajów</h2>
+	<input id="country-name" type="text" title="Minimum 3 litery"/>
+	<h2 id='header'></h2>
 	<ul id="countries">
-		<li>Brak danych</li>
 	</ul>
-
+</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="script.js"></script>
 </body>

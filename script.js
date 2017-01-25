@@ -15,7 +15,7 @@ function getQuote() {
 function createTweet(input) {
 	var tweetText = 'Quote of the day - ' + input.quoteText + ' Author: ' + input.quoteAuthor;
 
-	if (!input.quoteAuthor.length) {
+	if (!input.quoteAuthor) {
 		input.quoteAuthor = 'Unknown author';
 	}
 	

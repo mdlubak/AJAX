@@ -3,20 +3,26 @@
 <head>
 	<meta charset="utf-8">
 	<title>Countries Search AJAX</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
-	<h1>Wyszukiwarka krajów</h1>
-	<button id="search">Szukaj kraju</button>
-	<input id="country-name" type="text" title="Minimum 3 litery"/>
-	<h2 id='header'></h2>
-	<ul id="countries">
-	</ul>
-</div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="script.js"></script>
+	<div class="container">
+		<h1>Wyszukiwarka krajów</h1>
+		<button id="search" class="btn">Szukaj kraju</button>
+		<input id="country-name" type="text" placeholder="Minimum 3 characters"/>
+		<h2 id='header'></h2>
+		<ul id="countries" class="collapsible popout" data-collapsible="accordion">
+			<li id="list">
+				<div class="collapsible-header"">
+				<img src="http://www.geonames.org/flags/m/pl.png">
+					TEST
+				</div>
+			</li>
+		</ul>
+	</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="script.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
 </body>
 </html>
